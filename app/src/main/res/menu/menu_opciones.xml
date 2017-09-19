@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yelc.lopez.pets.OpcionesActivity">
+
+
+    <item
+        android:id="@+id/newServicio"
+        android:orderInCategory="100"
+        android:title="@string/newS"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/newCliente"
+        android:orderInCategory="100"
+        android:title="@string/newC"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/newProducto"
+        android:orderInCategory="100"
+        android:title="@string/newP"
+        app:showAsAction="never" />
+
+</menu>

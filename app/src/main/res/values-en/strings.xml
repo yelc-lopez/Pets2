@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab1">Reserve</string>
+    <string name="tab2">Services</string>
+    <string name="tab3">Buy</string>
+    <string name="transitionName">transition</string>
+    <string name="newS">New Service</string>
+    <string name="newC">New client</string>
+    <string name="newP">New Product</string>
+</resources>

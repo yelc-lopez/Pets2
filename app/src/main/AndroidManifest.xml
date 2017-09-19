@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yelc.lopez.pets">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OpcionesActivity"
+            android:label="@string/title_activity_opciones"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetalleServicioActivity"
+            android:parentActivityName=".OpcionesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yelc.lopez.pets.OpcionesActivity" />
+        </activity>
+        <activity
+            android:name=".ActivitysDB.NewClienteMascotaActivity"
+            android:label="@string/title_activity_new_cliente_mascota"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivitysDB.ReservacionesActivity"
+            android:label="@string/title_activity_reservaciones"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivitysDB.ClienteActivity"
+            android:label="@string/title_activity_cliente"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
